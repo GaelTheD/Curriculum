@@ -1,0 +1,99 @@
+/*
+Para poder realizar animaciones dentro de CSS es necesario ocupar palabras reservadas para hacer uso
+de transformaciones.
+*/
+
+@keyframes animacion_test{
+	from{
+		background-color: #790604;
+	}
+	to{
+		background-color: #1E3F5A;
+	}
+}
+
+@keyframes label-animation{
+	from{
+		transform: rotate(0deg);
+		margin-left: 1vw;
+	}
+	to{
+		transform: rotate(10deg);
+	}
+}
+
+.loader-doble{
+	width: 60px;
+	height: 23px;
+	border: 4px solid yellow;
+	border-radius: 50%;
+	animation: label-animation;
+	animation-duration: 1s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	position: absolute;
+	top: 20%;
+	left: 18%;
+}
+
+.animada{
+	width: 100%
+	background-color: blue;
+	color: white;
+	text-align: center;
+	height: 100px;
+	display: flex;
+	justify-content: left;
+	align-items: center; 
+	animation: animacion_test 1s alternate infinite;
+}
+
+.principal{
+	display: flex;
+
+	height: 386px;
+	width: 1121px;
+}
+
+.foto{
+	border: 16px solid #790604;
+	height: 22.1rem;
+	width: 22.36rem;
+	border-radius: 10px; 
+	border-top-right-radius: 0px;
+}
+
+.info-container{
+	border: 16px solid #1E3F5A;
+	background-color: #1E3F5A;
+	height: 340px;
+	width: 700px;
+	align-items: left;
+	text-align: left;
+	justify-content: left;
+	border-bottom-right-radius: 10px;
+	border-top-right-radius: 10px;
+	color: white;
+	font-family: roboto;
+}
+/*css grid youtube*/
+
+.footer{
+	background-color: red;
+	margin-top: 2rem;
+	height: 7.5rem;
+	color: white;
+	font-family: roboto;
+	animation: animacion_test 1s alternate infinite;
+}
+
+.container-portada{
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/fondo.jpg);
+    background-size: cover;
+    overflow: hidden;
+    background-color: rgba(5, 12, 49, 0.555);  
+    background-blend-mode: soft-light;
+}
