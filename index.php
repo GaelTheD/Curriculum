@@ -18,7 +18,12 @@
 	<center>
 		<div class="principal">
 			<div class="foto" border="1">
-				<img src="img/PerroGH.png"  alt="PerroGH">
+				<div>
+					<div class="SP">
+					<div class="loader-doble"></div>
+					</div>
+					<img src="img/PerroGH.png" alt="PerroGH">
+				</div>
 			</div>
 			<div class="info-container">
 				Información personal:
@@ -62,7 +67,6 @@
 			</div>
 		</div>
 	</center>
-	<div class="loader-doble"></div>
 	<footer class="footer">
 		<br>
 		<blockquote>
